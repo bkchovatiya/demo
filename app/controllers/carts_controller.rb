@@ -32,9 +32,6 @@ class CartsController < ApplicationController
       if line_item_addons.save
         flash[:success] = 'Product has been added to yout cart.'
       else
-        puts "-0--------"
-        puts line_item_addons.errors.full_messages
-        puts "-----"
         flash[:error] = line_item_addons.errors.full_messages.join(",")
       end
     end
@@ -63,7 +60,7 @@ class CartsController < ApplicationController
   end
 
   def check_product_addons_stock
-    if product_addons.count !=  params['product_addons'].count
+    if product_addons.count !=  params['product_addons'].to_a.count
       flash[:error] = 'One or More Product addon(s) are sold out!'
       redirect_to root_path
     end
