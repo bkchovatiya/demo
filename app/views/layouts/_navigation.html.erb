@@ -1,0 +1,18 @@
+<!-- Navigation-->
+<% cart_presenter = CartPresenter.new(@current_cart) %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container px-4 px-lg-5">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex">
+        <%= link_to cart_path, class:"btn btn-outline-dark"  do %>
+          <i class="bi-cart-fill me-1"></i>
+          Cart
+          <span class="badge bg-dark text-white ms-1 rounded-pill"><%= cart_presenter.total_line_items %></span>
+        <% end %>
+      </form>
+    </div>
+  </div>
+</nav>

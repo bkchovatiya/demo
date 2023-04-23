@@ -1,0 +1,34 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+product_one_addon_one:
+  product_id: product_one
+  name: 'Sugar'
+  sold_out: false
+product_one_addon_two:
+  product_id: product_one
+  name: 'Glazed'
+  sold_out: false
+product_one_addon_three:
+  product_id: product_one
+  name: 'Powder'
+  sold_out: false
+product_one_addon_four:
+  product_id: product_one
+  name: 'Sprinkles'
+  sold_out: false
+product_one_addon_five:
+  product_id: product_one
+  name: 'Fillings'
+  sold_out: true
+product_two_addon_one:
+  product_id: product_two
+  name: 'Sugar'
+  sold_out: false
+product_two_addon_two:
+  product_id: product_two
+  name: 'Glazed'
+  sold_out: false
+product_sold_out_addon_one:
+  product_id: product_sold_out
+  name: 'Sugar'
+  sold_out: true

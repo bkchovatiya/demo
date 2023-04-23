@@ -1,0 +1,40 @@
+<div class="card-body p-4">
+
+  <div class="row align-items-center">
+    <div class="col-md-2">
+      <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+        class="img-fluid" alt="Generic placeholder image">
+    </div>
+    <div class="col-md-2 d-flex justify-content-center">
+      <div>
+        <p class="small text-muted mb-4 pb-2">Name</p>
+        <p class="lead fw-normal mb-0"><%= line_item[:name] %></p>
+      </div>
+    </div>
+    <div class="col-md-2 d-flex justify-content-center">
+      <div>
+        <p class="small text-muted mb-4 pb-2">Addons</p>
+        <p class="lead fw-normal mb-0"><%= line_item[:addons] %></p>
+      </div>
+    </div>
+    <div class="col-md-2 d-flex justify-content-center">
+      <div>
+        <p class="small text-muted mb-4 pb-2">Quantity</p>
+        <p class="lead fw-normal mb-0"><%= line_item[:quantity] %></p>
+      </div>
+    </div>
+    <div class="col-md-2 d-flex justify-content-center">
+      <div>
+        <p class="small text-muted mb-4 pb-2">Price</p>
+        <p class="lead fw-normal mb-0"> <%= line_item[:price] %> </p>
+      </div>
+    </div>
+    <div class="col-md-2 d-flex justify-content-center">
+      <div>
+        <p class="small text-muted mb-4 pb-2">Total</p>
+        <p class="lead fw-normal mb-0"> <%= line_item[:total] %></p>
+      </div>
+    </div>
+  </div>
+
+</div>
