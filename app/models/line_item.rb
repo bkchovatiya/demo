@@ -12,7 +12,7 @@ class LineItem < ApplicationRecord
   def check_order_quantity
     if cart
       cart_line_item_quantity_count = cart.line_items.where.not(id: self.id).sum(:quantity)
-      errors.add(:quantity, 'Order Total Quantity should not be more than 25.') if (cart_line_item_quantity_count+ self.quantity) > 24
+      errors.add(:quantity, 'should not be more than 25.') if (cart_line_item_quantity_count+ self.quantity) > 24
     end
   end
 

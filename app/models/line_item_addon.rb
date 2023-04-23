@@ -7,7 +7,7 @@ class LineItemAddon < ApplicationRecord
 
   # Addons Should not be more than 3
   def check_addon_quantity
-    errors.add(:product_addon, 'Should not be more than 3') if line_item.line_item_addons.count > 3
+    errors.add(:product_addon, 'should not be more than 3') if line_item.line_item_addons.count > 3
   end
 
   def validate_product_addon_stock
